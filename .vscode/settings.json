@@ -1,0 +1,11 @@
+{
+    "editor.formatOnSave": true,
+    "phpfmt.cakephp": true,
+    "phpfmt.smart_linebreak_after_curly": true,
+    "phpfmt.passes": [
+        "AllmanStyleBraces",
+        "ReindentSwitchBlocks"
+    ],
+    "git.ignoreLimitWarning": true,
+    "intelephense.diagnostics.undefinedMethods": false
+}

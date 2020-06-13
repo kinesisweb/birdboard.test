@@ -1,0 +1,17 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito);.bb_background {
+  background: #F5F6F9;
+}
+
+.bb_card-border {
+  border-left: 6px solid var(--v-primary-base);
+  border-top-left-radius: 0 !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container.no-xl {
+  max-width: 1185px;
+}
+

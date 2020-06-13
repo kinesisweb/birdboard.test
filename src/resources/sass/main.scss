@@ -1,0 +1,23 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// custom classes
+.bb_background {
+    background: $board-background;
+}
+
+.bb_card-border {
+    border-left: 6px solid var(--v-primary-base);
+    border-top-left-radius: 0 !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container.no-xl {
+    max-width: 1185px;
+}
