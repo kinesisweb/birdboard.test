@@ -33,6 +33,7 @@ class ComposerStaticInit9b012a1811936668a184da66dcc4f6f7
         'ed962a97bd972bc82007176b647d4e36' => __DIR__ . '/..' . '/facade/ignition/src/helpers.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
+        'f40952b52f537c88d802b2469f90bdd7' => __DIR__ . '/..' . '/spatie/laravel-server-side-rendering/src/helpers.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -85,6 +86,7 @@ class ComposerStaticInit9b012a1811936668a184da66dcc4f6f7
             'Symfony\\Component\\ErrorHandler\\' => 31,
             'Symfony\\Component\\CssSelector\\' => 30,
             'Symfony\\Component\\Console\\' => 26,
+            'Spatie\\Ssr\\' => 11,
         ),
         'R' => 
         array (
@@ -301,6 +303,11 @@ class ComposerStaticInit9b012a1811936668a184da66dcc4f6f7
         array (
             0 => __DIR__ . '/..' . '/symfony/console',
         ),
+        'Spatie\\Ssr\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/spatie/laravel-server-side-rendering/src',
+            1 => __DIR__ . '/..' . '/spatie/server-side-rendering/src',
+        ),
         'Ramsey\\Uuid\\' => 
         array (
             0 => __DIR__ . '/..' . '/ramsey/uuid/src',
@@ -487,7 +494,15 @@ class ComposerStaticInit9b012a1811936668a184da66dcc4f6f7
     public static $classMap = array (
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
+        'App\\Http\\Controllers\\Auth\\ConfirmPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ConfirmPasswordController.php',
+        'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
+        'App\\Http\\Controllers\\Auth\\LoginController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/LoginController.php',
+        'App\\Http\\Controllers\\Auth\\RegisterController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/RegisterController.php',
+        'App\\Http\\Controllers\\Auth\\ResetPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ResetPasswordController.php',
+        'App\\Http\\Controllers\\Auth\\VerificationController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/VerificationController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
+        'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
+        'App\\Http\\Controllers\\ProjectTasksController' => __DIR__ . '/../..' . '/app/Http/Controllers/ProjectTasksController.php',
         'App\\Http\\Controllers\\ProjectsController' => __DIR__ . '/../..' . '/app/Http/Controllers/ProjectsController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
@@ -504,6 +519,7 @@ class ComposerStaticInit9b012a1811936668a184da66dcc4f6f7
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
         'App\\Providers\\EventServiceProvider' => __DIR__ . '/../..' . '/app/Providers/EventServiceProvider.php',
         'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
+        'App\\Task' => __DIR__ . '/../..' . '/app/Task.php',
         'App\\User' => __DIR__ . '/../..' . '/app/User.php',
         'Asm89\\Stack\\Cors' => __DIR__ . '/..' . '/asm89/stack-cors/src/Asm89/Stack/Cors.php',
         'Asm89\\Stack\\CorsService' => __DIR__ . '/..' . '/asm89/stack-cors/src/Asm89/Stack/CorsService.php',
@@ -4026,6 +4042,15 @@ class ComposerStaticInit9b012a1811936668a184da66dcc4f6f7
         'SebastianBergmann\\Type\\UnknownType' => __DIR__ . '/..' . '/sebastian/type/src/UnknownType.php',
         'SebastianBergmann\\Type\\VoidType' => __DIR__ . '/..' . '/sebastian/type/src/VoidType.php',
         'SebastianBergmann\\Version' => __DIR__ . '/..' . '/sebastian/version/src/Version.php',
+        'Spatie\\Ssr\\Engine' => __DIR__ . '/..' . '/spatie/server-side-rendering/src/Engine.php',
+        'Spatie\\Ssr\\Engines\\Node' => __DIR__ . '/..' . '/spatie/server-side-rendering/src/Engines/Node.php',
+        'Spatie\\Ssr\\Engines\\V8' => __DIR__ . '/..' . '/spatie/server-side-rendering/src/Engines/V8.php',
+        'Spatie\\Ssr\\Exceptions\\EngineError' => __DIR__ . '/..' . '/spatie/server-side-rendering/src/Exceptions/EngineError.php',
+        'Spatie\\Ssr\\Exceptions\\ServerScriptDoesNotExist' => __DIR__ . '/..' . '/spatie/server-side-rendering/src/Exceptions/ServerScriptDoesNotExist.php',
+        'Spatie\\Ssr\\Facades\\Ssr' => __DIR__ . '/..' . '/spatie/laravel-server-side-rendering/src/Facades/Ssr.php',
+        'Spatie\\Ssr\\Renderer' => __DIR__ . '/..' . '/spatie/server-side-rendering/src/Renderer.php',
+        'Spatie\\Ssr\\Resolvers\\MixResolver' => __DIR__ . '/..' . '/spatie/laravel-server-side-rendering/src/Resolvers/MixResolver.php',
+        'Spatie\\Ssr\\SsrServiceProvider' => __DIR__ . '/..' . '/spatie/laravel-server-side-rendering/src/SsrServiceProvider.php',
         'Stringable' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Stringable.php',
         'Symfony\\Component\\Console\\Application' => __DIR__ . '/..' . '/symfony/console/Application.php',
         'Symfony\\Component\\Console\\CommandLoader\\CommandLoaderInterface' => __DIR__ . '/..' . '/symfony/console/CommandLoader/CommandLoaderInterface.php',
@@ -4733,9 +4758,11 @@ class ComposerStaticInit9b012a1811936668a184da66dcc4f6f7
         'Symfony\\Polyfill\\Php73\\Php73' => __DIR__ . '/..' . '/symfony/polyfill-php73/Php73.php',
         'Symfony\\Polyfill\\Php80\\Php80' => __DIR__ . '/..' . '/symfony/polyfill-php80/Php80.php',
         'Tests\\CreatesApplication' => __DIR__ . '/../..' . '/tests/CreatesApplication.php',
-        'Tests\\Feature\\ProjectsTest' => __DIR__ . '/../..' . '/tests/Feature/ProjectsTest.php',
+        'Tests\\Feature\\ManageProjectsTest' => __DIR__ . '/../..' . '/tests/Feature/ManageProjectsTest.php',
+        'Tests\\Feature\\ProjectTasksTest' => __DIR__ . '/../..' . '/tests/Feature/ProjectTasksTest.php',
         'Tests\\TestCase' => __DIR__ . '/../..' . '/tests/TestCase.php',
         'Tests\\Unit\\ProjectTest' => __DIR__ . '/../..' . '/tests/Unit/ProjectTest.php',
+        'Tests\\Unit\\UserTest' => __DIR__ . '/../..' . '/tests/Unit/UserTest.php',
         'Text_Template' => __DIR__ . '/..' . '/phpunit/php-text-template/src/Template.php',
         'TheSeer\\Tokenizer\\Exception' => __DIR__ . '/..' . '/theseer/tokenizer/src/Exception.php',
         'TheSeer\\Tokenizer\\NamespaceUri' => __DIR__ . '/..' . '/theseer/tokenizer/src/NamespaceUri.php',

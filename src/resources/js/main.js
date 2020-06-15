@@ -14,6 +14,18 @@ Vue.component("bb-add-project-task-form", () =>
         "./components/projects/add_task/Form"
     )
 );
+Vue.component("bb-project-task-update", () =>
+    import(
+        /* webpackChunkName: "project-task-update" */
+        "./components/projects/update/Task"
+    )
+);
+Vue.component("bb-password-create", () =>
+    import(
+        /* webpackChunkName: "password-create" */
+        "./components/general/CreatePassword"
+    )
+);
 Vue.component("bb-logo", BbLogo);
 
 const app = new Vue({

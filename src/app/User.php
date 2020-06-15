@@ -38,6 +38,6 @@ class User extends Authenticatable
 
     public function projects()
     {
-        return $this->hasMany(Project::class, 'owner_id'); // default foreign key is 'user_id'
+        return $this->hasMany(Project::class, 'owner_id')->orderByDesc('updated_at'); // default foreign key is 'user_id'
     }
 }

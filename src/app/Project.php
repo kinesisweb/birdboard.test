@@ -10,6 +10,7 @@ class Project extends Model
         'title',
         'description',
         'owner_id',
+        'notes'
     ];
 
     public function path()

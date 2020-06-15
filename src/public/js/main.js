@@ -43,7 +43,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "js/" + ({"0":"js/add-task-form","1":"js/create-project-form"}[chunkId]||chunkId) + ".js"
+/******/ 		return __webpack_require__.p + "js/" + ({"js/add-task-form":"js/add-task-form","js/create-project-form":"js/create-project-form","password-create":"password-create","project-task-update":"project-task-update"}[chunkId]||chunkId) + ".js"
 /******/ 	}
 /******/
 /******/ 	// The require function
@@ -57947,10 +57947,16 @@ __webpack_require__.r(__webpack_exports__);
 
 
 vue__WEBPACK_IMPORTED_MODULE_1___default.a.component("bb-create-project-form", function () {
-  return __webpack_require__.e(/*! import() | js/create-project-form */ 1).then(__webpack_require__.bind(null, /*! ./components/projects/create/Form */ "./resources/js/components/projects/create/Form.vue"));
+  return __webpack_require__.e(/*! import() | js/create-project-form */ "js/create-project-form").then(__webpack_require__.bind(null, /*! ./components/projects/create/Form */ "./resources/js/components/projects/create/Form.vue"));
 });
 vue__WEBPACK_IMPORTED_MODULE_1___default.a.component("bb-add-project-task-form", function () {
-  return __webpack_require__.e(/*! import() | js/add-task-form */ 0).then(__webpack_require__.bind(null, /*! ./components/projects/add_task/Form */ "./resources/js/components/projects/add_task/Form.vue"));
+  return __webpack_require__.e(/*! import() | js/add-task-form */ "js/add-task-form").then(__webpack_require__.bind(null, /*! ./components/projects/add_task/Form */ "./resources/js/components/projects/add_task/Form.vue"));
+});
+vue__WEBPACK_IMPORTED_MODULE_1___default.a.component("bb-project-task-update", function () {
+  return __webpack_require__.e(/*! import() | project-task-update */ "project-task-update").then(__webpack_require__.bind(null, /*! ./components/projects/update/Task */ "./resources/js/components/projects/update/Task.vue"));
+});
+vue__WEBPACK_IMPORTED_MODULE_1___default.a.component("bb-password-create", function () {
+  return __webpack_require__.e(/*! import() | password-create */ "password-create").then(__webpack_require__.bind(null, /*! ./components/general/CreatePassword */ "./resources/js/components/general/CreatePassword.vue"));
 });
 vue__WEBPACK_IMPORTED_MODULE_1___default.a.component("bb-logo", _components_svg_Logo__WEBPACK_IMPORTED_MODULE_2__["default"]);
 var app = new vue__WEBPACK_IMPORTED_MODULE_1___default.a({
@@ -57982,11 +57988,14 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vuetify_lib__WEBPACK_IMPORTED_MOD
     VAppBar: vuetify_lib__WEBPACK_IMPORTED_MODULE_1__["VAppBar"],
     VBtn: vuetify_lib__WEBPACK_IMPORTED_MODULE_1__["VBtn"],
     VCard: vuetify_lib__WEBPACK_IMPORTED_MODULE_1__["VCard"],
+    VCardActions: vuetify_lib__WEBPACK_IMPORTED_MODULE_1__["VCardActions"],
     VCardSubtitle: vuetify_lib__WEBPACK_IMPORTED_MODULE_1__["VCardSubtitle"],
     VCardText: vuetify_lib__WEBPACK_IMPORTED_MODULE_1__["VCardText"],
     VCardTitle: vuetify_lib__WEBPACK_IMPORTED_MODULE_1__["VCardTitle"],
+    VCheckbox: vuetify_lib__WEBPACK_IMPORTED_MODULE_1__["VCheckbox"],
     VCol: vuetify_lib__WEBPACK_IMPORTED_MODULE_1__["VCol"],
     VContainer: vuetify_lib__WEBPACK_IMPORTED_MODULE_1__["VContainer"],
+    VForm: vuetify_lib__WEBPACK_IMPORTED_MODULE_1__["VForm"],
     VMain: vuetify_lib__WEBPACK_IMPORTED_MODULE_1__["VMain"],
     VIcon: vuetify_lib__WEBPACK_IMPORTED_MODULE_1__["VIcon"],
     VList: vuetify_lib__WEBPACK_IMPORTED_MODULE_1__["VList"],
@@ -57995,7 +58004,9 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vuetify_lib__WEBPACK_IMPORTED_MOD
     VMenu: vuetify_lib__WEBPACK_IMPORTED_MODULE_1__["VMenu"],
     VRow: vuetify_lib__WEBPACK_IMPORTED_MODULE_1__["VRow"],
     VSpacer: vuetify_lib__WEBPACK_IMPORTED_MODULE_1__["VSpacer"],
+    VSubheader: vuetify_lib__WEBPACK_IMPORTED_MODULE_1__["VSubheader"],
     VTextarea: vuetify_lib__WEBPACK_IMPORTED_MODULE_1__["VTextarea"],
+    VTextField: vuetify_lib__WEBPACK_IMPORTED_MODULE_1__["VTextField"],
     VToolbar: vuetify_lib__WEBPACK_IMPORTED_MODULE_1__["VToolbar"],
     VToolbarTitle: vuetify_lib__WEBPACK_IMPORTED_MODULE_1__["VToolbarTitle"]
   },

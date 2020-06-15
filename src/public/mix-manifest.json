@@ -1,6 +1,9 @@
 {
     "/js/main.js": "/js/main.js",
     "/css/main.css": "/css/main.css",
+    "/js/js/add-task-form.js": "/js/js/add-task-form.js",
     "/js/js/create-project-form.js": "/js/js/create-project-form.js",
-    "/js/js/add-task-form.js": "/js/js/add-task-form.js"
+    "/js/project-task-update.js": "/js/project-task-update.js",
+    "/js/create-password.js": "/js/create-password.js",
+    "/js/password-create.js": "/js/password-create.js"
 }

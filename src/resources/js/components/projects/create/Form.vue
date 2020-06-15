@@ -13,11 +13,19 @@
             outlined
             label="Description"
             name="description"
+            :counter="255"
             :error-messages="errors.description"
         />
-        <v-btn color="primary" type="submit">
-            Create Project
-        </v-btn>
+        <v-row>
+            <v-col cols="12" class="text-right">
+                <v-btn color="error" :href="action" class="mr-8">
+                    Cancel
+                </v-btn>
+                <v-btn color="primary" type="submit">
+                    Create Project
+                </v-btn>
+            </v-col>
+        </v-row>
         <input type="hidden" name="_token" :value="csrf" />
     </v-form>
 </template>
